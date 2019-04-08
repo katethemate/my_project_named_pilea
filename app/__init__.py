@@ -32,5 +32,9 @@ def create_app(test_config=None):
     @app.route('/first/')
     def first():
         return render_template('first_scenario.html')
-
+        
+    app.run(host='0.0.0.0', port=80)
     return app
+
+
+      
