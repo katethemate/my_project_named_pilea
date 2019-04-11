@@ -1,0 +1,51 @@
+{% from '/templates/section.html' import section %}
+
+#home{
+    background-color: #E5CEA9;
+}
+
+#scenario1{
+    background-color: #486152;
+}
+
+#scenario2{
+    background-color: #E5CEA9;
+}
+
+#scenario3{
+    background-color: #597C68;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    height:100vh;
+}
+
+#logo{
+    margin: 10px;
+    position:fixed;
+    width: 10%;
+}
+
+.pics{
+
+}
+
+.doodle{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 20%;
+}
+
+#doodle:hover{
+    
+}

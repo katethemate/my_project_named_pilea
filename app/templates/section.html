@@ -1,0 +1,12 @@
+{% macro section(img11, img12, img21, img22,  cssID) -%}
+    <section class='section' id= '{{ cssID }}'>
+        <div>
+            <img id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
+        </div>
+        <div class="pics">
+            <img class='doodle' id="doodle1" width="10%" src='{{ img11 }}' alt="a doodle" onmouseover="change();">
+            <img class='doodle' id="doddle2" width="10%" src='{{ img21 }}' alt="a doodle">
+        </div>
+       
+    </section>
+{%- endmacro %}
