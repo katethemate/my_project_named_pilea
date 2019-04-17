@@ -4,18 +4,16 @@
     <head>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='file.css') }}">
         <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}">
-            var img11 = "{{ img11 }}"; 
-            var img12 = "{{ img12 }}";   
-            function change() {
-                var image= document.getElementById('doodle1');
-                image.src = img12;
-            }
         </script>
     </head>
     <body>
+        
         <section id="home" class='section'>
             <img id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
         </section>
         {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario1') }}
+        {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario2') }}
+        {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario3') }}
+    
     </body>
 </html>
