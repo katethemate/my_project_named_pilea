@@ -9,10 +9,11 @@
     <body>
         
         <section id="home" class='section'>
-            <img id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
+            <img box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
         </section>
+
         {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario1') }}
-        {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario2') }}
+        {{ section("/static/secondscenario.png", "/static/on2.png", "/static/secondscenario.png", "/static/on2.png", 'scenario2') }}
         {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario3') }}
     
     </body>
