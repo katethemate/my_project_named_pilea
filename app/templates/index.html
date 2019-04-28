@@ -2,14 +2,30 @@
 {% from 'section.html' import section %}
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='file.css') }}">
-        <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}">
-        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
     </head>
     <body>
         
         <section id="home" class='section'>
-            <img box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
+            <div id="mySidenav" class="sidenav">
+                <a href="#scenario1">energy saving</a>
+                <a href="#scenario2">plastic packaging</a>
+                <a href="#scenario3">Clients</a>
+                <a href="#scenario4">Contact</a>
+            </div>
+            
+            <img  id='logo' src="{{ url_for('static', filename='pileaLogo.png') }}" alt="my logo">
+        </section>
+
+        <section id='intro' class='section'>
+            <div id="text">
+                read about easy ways to be more eco-fiendly!
+                click and scroll
+            </div>
+            <i class="down"></i>
         </section>
 
         {{ section("/static/off1.png", "/static/off2.png", "/static/on1.png", "/static/on2.png", 'scenario1') }}
