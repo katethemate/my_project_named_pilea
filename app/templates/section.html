@@ -1,9 +1,9 @@
 {% macro section(img11, img12, img21, img22,  cssID) -%}
     <section class='section' id= '{{ cssID }}'>
-        
+        <i class="up"></i>
         <div class="pics">
-            <img class='doodle' id="doodle1" width="10%" src='{{ img11 }}' alt="a doodle" onmouseover="this.src='{{ img12 }}'" onmouseout="this.src='{{ img11 }}'" />
-            <img class='doodle' id="doodle2" width="10%" src='{{ img21 }}' alt="a doodle" onmouseover="this.src='{{ img22 }}'" onmouseout="this.src='{{ img21 }}'" />
+            <img class="doodle doodle1" width="10%" src='{{ img11 }}' alt="a doodle" onmouseover="this.src='{{ img12 }}'" onmouseout="this.src='{{ img11 }}'" />
+            <img class="doodle doodle2" width="10%" src='{{ img21 }}' alt="a doodle" onmouseover="this.src='{{ img22 }}'" onmouseout="this.src='{{ img21 }}'" />
         </div>
         <i class="down"></i>
     </section>
